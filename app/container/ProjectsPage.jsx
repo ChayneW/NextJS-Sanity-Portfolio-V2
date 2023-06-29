@@ -45,7 +45,7 @@ const ProjectsPage = () => {
                         alt={project.title}
                       />
 
-                      <div className='text-center m-auto mb-5'>
+                      <div className='text-center m-auto mb-2'>
                         <div className='flex justify-around'>
                           <a href={project.codeLink} target='_blank' className='mx-2'>Code: <AiFillGithub size={40} /></a>
                           <a href={project.projectLink} target='_blank' className='mx-2'>Page:<AiOutlinePlusCircle size={40} /></a>
