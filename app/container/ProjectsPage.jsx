@@ -54,7 +54,7 @@ const ProjectsPage = () => {
                         <h1 className='font-[poppins]'>{project.title}</h1>
                         <br></br>
                         <p className='px-10 pb-2'>{project.description}</p>
-                        <h1 className='text-lg'>Tech Stack: {project.tech}</h1>
+                        <h1 className='text-md'>Tech Stack: {project.tech}</h1>
                         
                       </div>
                     </motion.div>
