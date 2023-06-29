@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600&family=Inter:wght@200;300;500;700;800&family=Poppins:ital,wght@0,300;0,400;0,600;1,200;1,500&family=Josefin+Sans:wght@300;400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ft-Josefin: 'Josefin Sans', sans-serif;
+  --ft-Poppins: 'Poppins', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: var(--ft-Josefin);
+}
+
+body {
+  background-color: #030005;
+  color: white;
+}
+.navbar {
+  background: transparent;
+  backdrop-filter: blur(8px);
+  @apply border border-gray-100 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5;
+}
+
+#Hero-main {
+  background: #060709;
+}
+
+.hero h1 {
+  font-weight: 600;
+  font-size: 50px;
+  font-family: var(--ft-Poppins);
+}
+
+.hero h3 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.hero-info {
+  margin: auto auto;
+}
+
+.hero-img {
+  background-image: url('https://res.cloudinary.com/db8opthjz/image/upload/v1687223841/resource-database-Vy3W_YiXEio-unsplash_uclgax.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: fit-content; 
+  height: 100vh;
+  min-width: fit-content;
+  width: 100vw;
+  background-position: center;
+}
+
+.glassmorphism {
+  @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5;
+}
+
+.about_bg {
+  background: #002628;
+}
+
+.about-profile-img {
+  margin: 0% auto;
+  /* height: fit-content;
+  width: fit-content; */
+
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.circle {
+  width: 4rem;
+  height: 4rem;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0% 0%;
+}
+
+
+.carousel {
+  overflow: hidden;
+  width: auto;
+}
+
+.inner-carousel {
+  display: flex;
+  padding: 0px 40px;
+}
+
+
+.skill-item {
+  height: 4rem;
+  width: 4rem;
+  padding: 5px 5px;
+  margin: 20px auto;
+}
+
+.skill-item img {
+  pointer-events: none;
+}
+
+.projects-container {
+ height: 100%;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.card-item {
+  margin: 1% 1%;
+}
+
+.card {
+  margin: 5% 5%;
+}
+
+.card-img-cont {
+  position: relative;
+}
+
+.card-img-cont > .text-center{
+  top: 10%;
+  opacity: 0;
+  position: absolute;
+  text-shadow: .5px 1px #000000;
+}
+
+.card-img-cont:hover > .card-img {
+  filter: blur(5px);
+}
+
+.card-img-cont:hover > .text-center{
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  opacity: 1;
+  width: 100%;
+}
+
+
+.contact_bg {
+  border-radius: 10px 10px 0px 0px;
+  min-height: 400px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.motion-container {
+  padding-bottom: 20rem;
+}
+
+.skill-cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.social-cont {
+  background: transparent;
+  backdrop-filter: blur(8px);
+  @apply border border-gray-100 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5;
+}
+
+@media screen and (width > 1024px) {
+
+  .hero-info {
+    margin: auto 0px;
+    width: 50%;
+    margin-left: 100px;
+  }
+
+  .circle {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .card-img {
+    height: fit-content;
+    width: fit-content;
+  }
+
+  .hero-img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 100vh; 
+    min-width: fit-content;
+    background-position: center;
+  }
+
+  .about-profile-img {
+    margin: 0% auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skill-cont {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .card-img-cont > .text-center{
+    top: 30%;
+  }
+
+  .social-cont {
+    background: transparent;
+    backdrop-filter: blur(8px);
+    @apply border border-gray-100 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5;
+  }
+
+  .contact_bg {
+    width: 70%;
+  }
+
+}
+
+
+
