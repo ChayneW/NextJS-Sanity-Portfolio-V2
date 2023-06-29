@@ -51,9 +51,9 @@ const ProjectsPage = () => {
                           <a href={project.projectLink} target='_blank' className='mx-2'>Page:<AiOutlinePlusCircle size={30} /></a>
                         </div>
 
-                        <h1 className='font-[poppins]'>{project.title}</h1>
-                        <p className='px-10 pb-1'>{project.description}</p>
-                        <h1 className='text-md'>Tech Stack: {project.tech}</h1>
+                        <h1 className='font-[poppins] project-title'>{project.title}</h1>
+                        <p className='px-10 pb-1 project-desc'>{project.description}</p>
+                        <h1 className='text-md tech-stack'>Tech Stack: {project.tech}</h1>
                         
                       </div>
                     </motion.div>
