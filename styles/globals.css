@@ -215,6 +215,14 @@ body {
     top: 30%;
   }
 
+  .project-title {
+    margin-bottom: 5px;
+  }
+
+  .project-desc {
+    margin: 10px 0px;
+  }
+
   .social-cont {
     background: transparent;
     backdrop-filter: blur(8px);
