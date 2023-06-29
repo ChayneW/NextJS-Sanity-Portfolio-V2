@@ -1,0 +1,18 @@
+create backend sanity
+    - create schema structure and save data to sanity
+
+
+create next.js App
+    -
+    -
+    - create page.jsx and layout.jsx    
+        - layout.jsx: create metadata
+    
+    - connect sanity to next.js:
+        - npm i sanity 
+        - npm install @sanity/client
+        - npm install --save @sanity/image-url
+        - create sanity.config.ts
+
+
+
